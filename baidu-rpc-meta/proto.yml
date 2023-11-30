@@ -1,0 +1,4 @@
+- output_filename: baidu_rpc_meta.rs
+  proto_path: idl/baidu_rpc_meta.proto
+  includes:
+  - idl

@@ -1,0 +1,18 @@
+[package]
+name = "baidu_rpc_meta"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "A rust wrapper of baidu_rpc_meta for the baidu_std protocol"
+documentation = "https://docs.rs/baidu_rpc_meta"
+readme = "README.md"
+homepage = "https://github.com/RuRPC/rurpc"
+repository = "https://github.com/RuRPC/rurpc"
+
+[dependencies]
+bytes.workspace = true
+futures.workspace = true
+pilota.workspace = true
+
+[build-dependencies]
+protobuf-build = { path = "../protobuf-build" }

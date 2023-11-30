@@ -1,0 +1,4 @@
+- output_filename: echo.rs
+  proto_path: ../idl/echo.proto
+  includes:
+  - ../idl

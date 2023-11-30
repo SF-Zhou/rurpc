@@ -1,0 +1,12 @@
+[package]
+name = "proto-gen"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bytes.workspace = true
+futures.workspace = true
+pilota.workspace = true
+
+[build-dependencies]
+protobuf-build = { path = "../../protobuf-build" }

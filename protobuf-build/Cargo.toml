@@ -1,0 +1,19 @@
+[package]
+name = "protobuf-build"
+version = "0.1.0"
+edition = "2021"
+description = "Compile protobuf idls into rust code at compile-time."
+readme = "README.md"
+license = "MIT"
+documentation = "https://github.com/RuRPC/rurpc"
+homepage = "https://github.com/RuRPC/rurpc"
+repository = "https://github.com/RuRPC/rurpc"
+
+[dependencies]
+anyhow.workspace = true
+faststr.workspace = true
+itertools.workspace = true
+lazy_static.workspace = true
+pilota-build.workspace = true
+serde = { workspace = true, features = ["derive"] }
+serde_yaml.workspace = true

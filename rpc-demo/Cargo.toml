@@ -1,0 +1,12 @@
+[package]
+name = "rpc_test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+byteorder.workspace = true
+bytes.workspace = true
+baidu_rpc_meta = { path = "../baidu-rpc-meta" }
+pilota.workspace = true
+tokio = { version = "1", features = ["full"] }
+proto-gen = { path = "./proto-gen" }

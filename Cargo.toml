@@ -1,0 +1,40 @@
+[workspace]
+members = [
+  "protobuf-build",
+  "baidu-rpc-meta",
+  "rpc-demo",
+  "rpc-demo/proto-gen",
+  "rurpc-utils",
+]
+resolver = "2"
+
+[workspace.package]
+authors = ["SF-Zhou <sfzhou.scut@gmail.com>"]
+edition = "2021"
+homepage = "https://github.com/RuRPC/rurpc"
+repository = "https://github.com/RuRPC/RuRPC"
+license = "MIT"
+
+[workspace.dependencies]
+anyhow = "1"
+byteorder = "1"
+bytes = "1"
+faststr = "0"
+futures = "0"
+itertools = "0"
+lazy_static = "1"
+pilota = "0"
+pilota-build = "0"
+serde = "1"
+serde_yaml = "0"
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+codegen-units = 1
+panic = 'unwind'
+incremental = false
+overflow-checks = false
